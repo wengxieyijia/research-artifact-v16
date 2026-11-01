@@ -1,0 +1,57 @@
+[
+  {
+    "case": "P01",
+    "paper": "GEOWEALTH-US: Spatial wealth inequality data for the United States, 1960\u20132020",
+    "h1": "Since 1970, the distribution of household wealth between U.S. regions has become more unequal.",
+    "data_file": "P01/data.csv",
+    "rows": 5174,
+    "columns": 71,
+    "data_sha256": "bc77fe56d3818c05cde5b0b99584af23c8d8389721011474c45935dde1813c01",
+    "analysis_sha256": "0153b9dcaf19254a66a86e62a0e7938d8d36ee5a9d1fb8a2299d6432f30e1c29",
+    "paths": 108
+  },
+  {
+    "case": "P02",
+    "paper": "Procrastination as a marker of cognitive decline: Evidence from longitudinal transitions in the older adult population",
+    "h1": "Procrastination scores differ between normal cognition, mild cognitive impairment, and dementia groups.",
+    "data_file": "P02/data.csv",
+    "rows": 1647,
+    "columns": 12,
+    "data_sha256": "95f1386e55090c932384b51f497779f3afe474f7f72f06437f2d3864d2f478b0",
+    "analysis_sha256": "cb0c98d6a5024c7e72b7dfb8b1a5480075492b591713ae79bd07a05f20c83df7",
+    "paths": 126
+  },
+  {
+    "case": "P03",
+    "paper": "Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania",
+    "h1": "The increase in New Jersey minimum wages does not reduce fast-food employment.",
+    "data_file": "P03/data.csv",
+    "rows": 410,
+    "columns": 46,
+    "data_sha256": "f1da1a9245e5febeaa16f19790655ba5d92bc159b5d6fa42d06668d5888d6ebf",
+    "analysis_sha256": "3437c8195bd323a8e899289269ea785311f3fdf98da184b05c2c094054bd78f8",
+    "paths": 120
+  },
+  {
+    "case": "P04",
+    "paper": "Using Geographic Variation in College Proximity to Estimate the Return to Schooling",
+    "h1": "Growing up near a four-year college is associated with more completed years of schooling.",
+    "data_file": "P04/data.csv",
+    "rows": 3613,
+    "columns": 52,
+    "data_sha256": "fe829a897b8ae5e5aa8efbea0e61c18de736700ea29de03a2d6d52200d92ba9e",
+    "analysis_sha256": "af82935fb431511f8e184271c906cbd223ee0bf86b60a827c2928c05e54a0d2d",
+    "paths": 90
+  },
+  {
+    "case": "P05",
+    "paper": "Exploring the relationship between depression and delinquency: a sibling comparison design using the NLSY",
+    "h1": "Depression and delinquency are positively correlated when different sources of variance can be distinguished.",
+    "data_file": "P05/data.csv",
+    "rows": 8012,
+    "columns": 11,
+    "data_sha256": "fc0c1cd37261c8f9258168005be458ae89fc120b89a3771068b5f1651e3ed644",
+    "analysis_sha256": "946184787387dd3d23f8686b95712c2da0a047dc6bef0b1d9f9d7a55c114cb68",
+    "paths": 60
+  }
+]

@@ -1,0 +1,523 @@
+{
+  "P01": {
+    "paper_id": "paper_f9d1a6401b48ac6a1657",
+    "member_suffix": "data/wealth_inequality.Rdata",
+    "object": "ineq_cz",
+    "csv_lineterminator": "\r\n"
+  },
+  "P02": {
+    "paper_id": "paper_28836601b66ec874d40f",
+    "member_suffix": "analysis/data/data_long.csv",
+    "csv_lineterminator": "\n"
+  },
+  "P03": {
+    "member_suffix": "public.dat",
+    "fields": [
+      {
+        "name": "SHEET",
+        "start": 1,
+        "end": 3
+      },
+      {
+        "name": "CHAIN",
+        "start": 5,
+        "end": 5
+      },
+      {
+        "name": "CO_OWNED",
+        "start": 7,
+        "end": 7
+      },
+      {
+        "name": "STATE",
+        "start": 9,
+        "end": 9
+      },
+      {
+        "name": "SOUTHJ",
+        "start": 11,
+        "end": 11
+      },
+      {
+        "name": "CENTRALJ",
+        "start": 13,
+        "end": 13
+      },
+      {
+        "name": "NORTHJ",
+        "start": 15,
+        "end": 15
+      },
+      {
+        "name": "PA1",
+        "start": 17,
+        "end": 17
+      },
+      {
+        "name": "PA2",
+        "start": 19,
+        "end": 19
+      },
+      {
+        "name": "SHORE",
+        "start": 21,
+        "end": 21
+      },
+      {
+        "name": "NCALLS",
+        "start": 23,
+        "end": 24
+      },
+      {
+        "name": "EMPFT",
+        "start": 26,
+        "end": 30
+      },
+      {
+        "name": "EMPPT",
+        "start": 32,
+        "end": 36
+      },
+      {
+        "name": "NMGRS",
+        "start": 38,
+        "end": 42
+      },
+      {
+        "name": "WAGE_ST",
+        "start": 44,
+        "end": 48
+      },
+      {
+        "name": "INCTIME",
+        "start": 50,
+        "end": 54
+      },
+      {
+        "name": "FIRSTINC",
+        "start": 56,
+        "end": 60
+      },
+      {
+        "name": "BONUS",
+        "start": 62,
+        "end": 62
+      },
+      {
+        "name": "PCTAFF",
+        "start": 64,
+        "end": 68
+      },
+      {
+        "name": "MEALS",
+        "start": 70,
+        "end": 70
+      },
+      {
+        "name": "OPEN",
+        "start": 72,
+        "end": 76
+      },
+      {
+        "name": "HRSOPEN",
+        "start": 78,
+        "end": 82
+      },
+      {
+        "name": "PSODA",
+        "start": 84,
+        "end": 88
+      },
+      {
+        "name": "PFRY",
+        "start": 90,
+        "end": 94
+      },
+      {
+        "name": "PENTREE",
+        "start": 96,
+        "end": 100
+      },
+      {
+        "name": "NREGS",
+        "start": 102,
+        "end": 103
+      },
+      {
+        "name": "NREGS11",
+        "start": 105,
+        "end": 106
+      },
+      {
+        "name": "TYPE2",
+        "start": 108,
+        "end": 108
+      },
+      {
+        "name": "STATUS2",
+        "start": 110,
+        "end": 110
+      },
+      {
+        "name": "DATE2",
+        "start": 112,
+        "end": 117
+      },
+      {
+        "name": "NCALLS2",
+        "start": 119,
+        "end": 120
+      },
+      {
+        "name": "EMPFT2",
+        "start": 122,
+        "end": 126
+      },
+      {
+        "name": "EMPPT2",
+        "start": 128,
+        "end": 132
+      },
+      {
+        "name": "NMGRS2",
+        "start": 134,
+        "end": 138
+      },
+      {
+        "name": "WAGE_ST2",
+        "start": 140,
+        "end": 144
+      },
+      {
+        "name": "INCTIME2",
+        "start": 146,
+        "end": 150
+      },
+      {
+        "name": "FIRSTIN2",
+        "start": 152,
+        "end": 156
+      },
+      {
+        "name": "SPECIAL2",
+        "start": 158,
+        "end": 158
+      },
+      {
+        "name": "MEALS2",
+        "start": 160,
+        "end": 160
+      },
+      {
+        "name": "OPEN2R",
+        "start": 162,
+        "end": 166
+      },
+      {
+        "name": "HRSOPEN2",
+        "start": 168,
+        "end": 172
+      },
+      {
+        "name": "PSODA2",
+        "start": 174,
+        "end": 178
+      },
+      {
+        "name": "PFRY2",
+        "start": 180,
+        "end": 184
+      },
+      {
+        "name": "PENTREE2",
+        "start": 186,
+        "end": 190
+      },
+      {
+        "name": "NREGS2",
+        "start": 192,
+        "end": 193
+      },
+      {
+        "name": "NREGS112",
+        "start": 195,
+        "end": 196
+      }
+    ],
+    "source_archive_sha256": "41a29aec6b489658b20030d044a2b20a5f5a04b871cde41df057afd6013ba587",
+    "csv_lineterminator": "\r\n"
+  },
+  "P04": {
+    "member_suffix": "nls.dat",
+    "fields": [
+      {
+        "name": "id",
+        "start": 1,
+        "end": 5
+      },
+      {
+        "name": "nearc2",
+        "start": 7,
+        "end": 7
+      },
+      {
+        "name": "nearc4",
+        "start": 10,
+        "end": 10
+      },
+      {
+        "name": "nearc4a",
+        "start": 12,
+        "end": 13
+      },
+      {
+        "name": "nearc4b",
+        "start": 15,
+        "end": 16
+      },
+      {
+        "name": "ed76",
+        "start": 18,
+        "end": 19
+      },
+      {
+        "name": "ed66",
+        "start": 21,
+        "end": 22
+      },
+      {
+        "name": "age76",
+        "start": 24,
+        "end": 25
+      },
+      {
+        "name": "daded",
+        "start": 27,
+        "end": 31
+      },
+      {
+        "name": "nodaded",
+        "start": 33,
+        "end": 33
+      },
+      {
+        "name": "momed",
+        "start": 35,
+        "end": 39
+      },
+      {
+        "name": "nomomed",
+        "start": 41,
+        "end": 41
+      },
+      {
+        "name": "weight",
+        "start": 43,
+        "end": 54
+      },
+      {
+        "name": "momdad14",
+        "start": 56,
+        "end": 56
+      },
+      {
+        "name": "sinmom14",
+        "start": 58,
+        "end": 58
+      },
+      {
+        "name": "step14",
+        "start": 60,
+        "end": 60
+      },
+      {
+        "name": "reg661",
+        "start": 62,
+        "end": 62
+      },
+      {
+        "name": "reg662",
+        "start": 64,
+        "end": 64
+      },
+      {
+        "name": "reg663",
+        "start": 66,
+        "end": 66
+      },
+      {
+        "name": "reg664",
+        "start": 68,
+        "end": 68
+      },
+      {
+        "name": "reg665",
+        "start": 70,
+        "end": 70
+      },
+      {
+        "name": "reg666",
+        "start": 72,
+        "end": 72
+      },
+      {
+        "name": "reg667",
+        "start": 74,
+        "end": 74
+      },
+      {
+        "name": "reg668",
+        "start": 76,
+        "end": 76
+      },
+      {
+        "name": "reg669",
+        "start": 78,
+        "end": 78
+      },
+      {
+        "name": "south66",
+        "start": 80,
+        "end": 80
+      },
+      {
+        "name": "work76",
+        "start": 82,
+        "end": 82
+      },
+      {
+        "name": "work78",
+        "start": 84,
+        "end": 84
+      },
+      {
+        "name": "lwage76",
+        "start": 86,
+        "end": 97
+      },
+      {
+        "name": "lwage78",
+        "start": 99,
+        "end": 110
+      },
+      {
+        "name": "famed",
+        "start": 112,
+        "end": 112
+      },
+      {
+        "name": "black",
+        "start": 114,
+        "end": 114
+      },
+      {
+        "name": "smsa76r",
+        "start": 116,
+        "end": 116
+      },
+      {
+        "name": "smsa78r",
+        "start": 118,
+        "end": 118
+      },
+      {
+        "name": "reg76r",
+        "start": 120,
+        "end": 120
+      },
+      {
+        "name": "reg78r",
+        "start": 122,
+        "end": 122
+      },
+      {
+        "name": "reg80r",
+        "start": 124,
+        "end": 124
+      },
+      {
+        "name": "smsa66r",
+        "start": 126,
+        "end": 126
+      },
+      {
+        "name": "wage76",
+        "start": 128,
+        "end": 132
+      },
+      {
+        "name": "wage78",
+        "start": 134,
+        "end": 138
+      },
+      {
+        "name": "wage80",
+        "start": 140,
+        "end": 144
+      },
+      {
+        "name": "noint78",
+        "start": 146,
+        "end": 146
+      },
+      {
+        "name": "noint80",
+        "start": 148,
+        "end": 148
+      },
+      {
+        "name": "enroll76",
+        "start": 150,
+        "end": 150
+      },
+      {
+        "name": "enroll78",
+        "start": 152,
+        "end": 152
+      },
+      {
+        "name": "enroll80",
+        "start": 154,
+        "end": 154
+      },
+      {
+        "name": "kww",
+        "start": 156,
+        "end": 157
+      },
+      {
+        "name": "iq",
+        "start": 159,
+        "end": 161
+      },
+      {
+        "name": "marsta76",
+        "start": 163,
+        "end": 163
+      },
+      {
+        "name": "marsta78",
+        "start": 165,
+        "end": 165
+      },
+      {
+        "name": "marsta80",
+        "start": 167,
+        "end": 167
+      },
+      {
+        "name": "libcrd14",
+        "start": 169,
+        "end": 169
+      }
+    ],
+    "source_archive_sha256": "0e9b2ad4182ea631ca3dd8a5fff6c1b0ab86b56c6a3fa868870f716e8d82691f",
+    "csv_lineterminator": "\r\n"
+  },
+  "P05": {
+    "paper_id": "paper_811c6d4076a61be0a57e",
+    "member_suffix": "data/dsSingle_unpaired.xlsx",
+    "family_map_sha256": "07a7213a25bc00594f930c855ad3da531cf6440818bc2a1a2c39dbce3d2d2833",
+    "csv_lineterminator": "\r\n"
+  }
+}

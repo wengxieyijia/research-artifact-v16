@@ -1,0 +1,46 @@
+[
+  {
+    "path": "outputs/decision_option_lab/config_high.json",
+    "purpose": "Created by the init command; contains model settings, no credential."
+  },
+  {
+    "path": "outputs/decision_option_lab/auto_report_v8.html",
+    "purpose": "Created by init; compact English checkpoint view."
+  },
+  {
+    "path": "outputs/DAG_reported_20261023/pipeline.py",
+    "purpose": "Created by init from the released graph-construction source."
+  },
+  {
+    "path": "outputs/DAG_20papers_20261023/\u5c55\u793a\u6570\u636e\u5feb\u7167.json",
+    "purpose": "Frozen 20-paper graph snapshot; expected SHA-256 is recorded in docs/PROTOTYPE.md."
+  },
+  {
+    "path": "outputs/DAG_20papers_20261023/original_options.json",
+    "purpose": "Reported historical options from the same graph release."
+  },
+  {
+    "path": "outputs/DAG_20papers_20261023/classification.json",
+    "purpose": "Historical family/method/component mappings."
+  },
+  {
+    "path": "outputs/DAG_20papers_20261023/records",
+    "purpose": "Historical paper H1 and source records; no target study."
+  },
+  {
+    "path": "outputs/Neo4j_ColumnBinding_Provenance_v2_20261025/column_binding_embeddings.npz",
+    "purpose": "Recorded historical-column embedding cache."
+  },
+  {
+    "path": "work/neo4j20_runtime/runtime.json",
+    "purpose": "Paths to the separately installed portable Neo4j and Java distributions."
+  },
+  {
+    "path": "work/retrieval_models/multilingual-minilm/tokenizer.json",
+    "purpose": "Pinned multilingual MiniLM tokenizer."
+  },
+  {
+    "path": "work/retrieval_models/multilingual-minilm/onnx/model_quint8_avx2.onnx",
+    "purpose": "Pinned MiniLM ONNX model."
+  }
+]

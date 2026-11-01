@@ -1,0 +1,6 @@
+-r requirements-data.txt
+pypdf==6.10.0
+PyMuPDF==2.0
+onnxruntime==1.31.0
+tokenizers==0.23.3
+

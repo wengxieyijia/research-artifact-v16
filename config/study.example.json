@@ -1,0 +1,20 @@
+{
+  "run_id": "new_study_01",
+  "paper": {
+    "pdf": "/absolute/path/to/paper.pdf",
+    "paper_id": "new_study_01",
+    "title": "Study title"
+  },
+  "code": [
+    "/absolute/path/to/author_replication.zip"
+  ],
+  "data": {
+    "path": "/absolute/path/to/data.csv",
+    "provenance": "Describe the independently supplied analysis table"
+  },
+  "output": "/absolute/path/to/new_run/design",
+  "quarantine": "/absolute/path/to/new_run/quarantine",
+  "report": "/absolute/path/to/new_run/report",
+  "alpha": 0.05,
+  "max_specifications": 256
+}

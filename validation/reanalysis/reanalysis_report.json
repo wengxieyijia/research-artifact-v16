@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "scope": "HRS frozen-design computational reproduction",
+  "validated_cases": [
+    "P02"
+  ],
+  "recomputed_effects": true,
+  "original_data_read": true,
+  "llm_calls": false,
+  "author_material_in_execution_runtime": false,
+  "reference_opened_after_selected_study_completed": true,
+  "counts": {
+    "paths": 126,
+    "success": 126,
+    "failed": 0,
+    "curves": 1,
+    "valid_p": 90,
+    "p_unavailable": 36
+  },
+  "comparison": {
+    "status": "passed",
+    "paths_compared": 126,
+    "all_numeric_fields_exact": true,
+    "relative_tolerance": 1e-09,
+    "absolute_tolerance": 1e-12,
+    "maximum_absolute_difference": {
+      "effect_size": 0,
+      "alpha": 0,
+      "ci_lower": 0,
+      "ci_upper": 0,
+      "p_value": 0
+    },
+    "mismatches": []
+  },
+  "execution": {
+    "official_boba_compile": true,
+    "official_boba_run": true,
+    "compiled_scripts": 8,
+    "executed_paths": 126,
+    "all_script_exit_codes_zero": true,
+    "batch_size": 16,
+    "analysis_sha256": "cb0c98d6a5024c7e72b7dfb8b1a5480075492b591713ae79bd07a05f20c83df7",
+    "input_sha256": "95f1386e55090c932384b51f497779f3afe474f7f72f06437f2d3864d2f478b0"
+  },
+  "environment": {
+    "python": "3.12.7",
+    "boba": "1.1.2",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "broader_batch_stopped_at_user_request": true,
+  "full_five_study_reanalysis_claimed": false
+}

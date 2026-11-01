@@ -1,12 +1,10 @@
-# Credentials and local configuration
 .env
 .env.*
 *.pem
 *.key
 secrets.*
 credentials.*
-
-# Local environments, generated outputs, and caches
+connection.local.json
 .venv/
 venv/
 __pycache__/
@@ -15,5 +13,10 @@ __pycache__/
 .matplotlib/
 outputs/
 outputs_*/
+rerun_outputs/
+external_data/
+external_workspace/
+local_inputs.json
+*.local.json
 .DS_Store
 Thumbs.db

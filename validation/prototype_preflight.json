@@ -1,0 +1,8 @@
+{
+  "missing_resources_gate_verified": true,
+  "no_provider_call": true,
+  "api_key_absence_gate_verified": true,
+  "entry_import_returncode": 0,
+  "fresh_design_generation_executed": false,
+  "missing_resources_count": 8
+}

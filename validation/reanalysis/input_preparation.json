@@ -1,0 +1,37 @@
+[
+  {
+    "case": "P01",
+    "data_sha256": "bc77fe56d3818c05cde5b0b99584af23c8d8389721011474c45935dde1813c01",
+    "source": "papers_code_and_available_data.zip",
+    "rows": 5174,
+    "columns": 71
+  },
+  {
+    "case": "P02",
+    "data_sha256": "95f1386e55090c932384b51f497779f3afe474f7f72f06437f2d3864d2f478b0",
+    "source": "papers_code_and_available_data.zip",
+    "rows": 1647,
+    "columns": 12
+  },
+  {
+    "case": "P03",
+    "data_sha256": "f1da1a9245e5febeaa16f19790655ba5d92bc159b5d6fa42d06668d5888d6ebf",
+    "source": "data.zip",
+    "rows": 410,
+    "columns": 46
+  },
+  {
+    "case": "P04",
+    "data_sha256": "fe829a897b8ae5e5aa8efbea0e61c18de736700ea29de03a2d6d52200d92ba9e",
+    "source": "data.zip",
+    "rows": 3613,
+    "columns": 52
+  },
+  {
+    "case": "P05",
+    "data_sha256": "fc0c1cd37261c8f9258168005be458ae89fc120b89a3771068b5f1651e3ed644",
+    "source": "papers_code_and_available_data.zip",
+    "rows": 8012,
+    "columns": 11
+  }
+]

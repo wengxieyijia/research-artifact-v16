@@ -1,45 +1,31 @@
-# Figure Reproduction Validation
+# Validation
 
-Validation date: 1 November 2026. Repository: https://github.com/wengxieyijia/research-artifact-v16.
+Checked on Windows with Python 3.12.7 on 1 November 2026.
 
-## Environment and commands
+## Frozen-design computational reproduction
 
-A new Windows AMD64 virtual environment used Python 3.12.7 with `include-system-site-packages = false`. All 11 pinned dependencies installed successfully; `python -m pip check` reported no broken requirements. The exact versions and font/backend information are recorded in `validation/environment.json` and `validation/reproduction_record.json`.
+The analysis, data-conversion, and prototype Python requirements were installed in the independently created virtual environment used for the earlier figure checks, with system site packages disabled. Dependency consistency checking passed. No packages, virtual environment, raw input tables, or credentials are bundled in the release.
 
-The documented entry points were run with that environment's interpreter:
+The five data-preparation recipes were executed against the recorded source archives and public family map. Every generated CSV matched its frozen analysis-table SHA-256. The GEOWEALTH-US conversion follows the original RData-to-candidate-CSV and selected-table CSV import/export; direct RData serialization alone initially produced different bytes and was not accepted. The converter now explicitly preserves each recorded CSV line ending. NlsyLinks emitted a date-casting warning while reading columns outside the two join fields; the joined input still matched its recorded hash exactly.
 
-```sh
-python reproduce_figures.py --check-only
-python reproduce_figures.py
-python verify_reproduction.py --require-reference-images
-```
+The selected computational check is the HRS procrastination/cognitive-status study (P02), a study other than GEOWEALTH-US as requested by the author. Its frozen implementation ran with official Boba 1.1.2: **126 successful paths, no failed paths, one curve, 90 valid P values, and 36 unavailable P values**. Of the 90 valid tests, 26 were significant. Batched scheduling compiled 8 scripts; all eight script exit codes were zero, and their expanded bindings cover the 126 frozen IDs exactly once.
 
-An additional documented branch was exercised using a separate output directory:
+The wider batch was stopped at the author's request once a study other than GEOWEALTH-US had completed. Other completed or partial receipts remain in the private work directory; this release does not claim a new complete five-study reanalysis. The original v16 tables and eight curves, including the 24 recorded NLSY failures, remain unchanged. No parameters or scientific implementations were repaired to make this validation pass.
 
-```sh
-python reproduce_figures.py --case P03 --font "DejaVu Sans" --output outputs_dejavu
-python verify_reproduction.py --output outputs_dejavu
-```
+All 126 HRS statuses and choices, estimates, available intervals and P values, and significance flags matched the frozen reference within rtol=1e-9 and atol=1e-12. Exact equality of every compared numeric field: **true**. Maximum absolute differences by field: `{"alpha": 0, "ci_lower": 0, "ci_upper": 0, "effect_size": 0, "p_value": 0}`. The reference result table was opened for comparison only after HRS had finished. The new curve was drawn from the newly calculated estimates.
 
-## Results
+See `../validation/reanalysis/reanalysis_report.json`, `recomputed_results.csv`, `input_preparation.json`, and `figures/` for the recorded results. The newly computed HRS PNG is byte-identical to its original figure: **true**. Numerical reproduction is distinct from a check of statistical validity or scientific applicability.
 
-| Check | Result |
-|---|---|
-| Frozen input/reference fingerprints and counts | Passed: 504 paths, 480 successful estimates, 24 failures, eight curves. |
-| Saved inference availability | Preserved: 372 valid P values and 108 unavailable P values among successful estimates. |
-| Point values, intervals, flags, and sorting | All 480 plotted records matched exactly. |
-| Decision-Option matrix memberships | All eight curves matched. |
-| PNG files with Arial in the recorded environment | Eight of eight byte-identical and pixel-identical to the original references. |
-| Normalized SVG geometry, styles, and text | Eight of eight matched. |
-| DejaVu Sans / P03 subset | Both curves and all 120 plotted records/matrix memberships matched; typography differs as expected. |
-| Original reference images, source ZIPs, and accepted analyses | Unchanged. |
+## Original saved-result figure route
 
-`validation/figures/` contains the actual regenerated PNG/SVG files. `validation/reproduction_record.json` records the actual plotted points, sorted IDs, matrix memberships, environment, and file hashes. `validation/validation_report.json` records every curve comparison. `validation/dejavu_P03_validation.json` records the fallback-font subset check.
+The earlier `reproduce_figures.py` checks remain recorded under `validation/`. They matched all 480 saved points and Option memberships; all eight PNGs were byte-identical in the recorded Arial environment, and normalized SVG geometry/styles/text matched. This route reads saved results rather than recomputing analyses. Cross-platform font/raster identity is not promised.
 
-SVG equivalence excludes the metadata subtree, generated element IDs/ID references, and non-rendering XML indentation. Rendered text and style content are retained. SVG byte identity is not asserted. The checker initially numbered identifiers using positions that included metadata elements, causing false mismatches when export dates were omitted. That checker-only normalization was corrected; the scientific data and generated/reference figures were not changed.
+## Design prototype
 
-## Limits
+The released v12 orchestrator imported successfully with network and subprocess access blocked. The initialization and preflight checks were exercised in a new workspace. Missing historical resources or an absent model credential stop the run before a provider request. See `../validation/prototype_preflight.json`.
 
-These are checks of rendering from saved outputs. No statistical model, imputation procedure, Boba path, retrieval stage, hypothesis extraction, or LLM generation was rerun. Matching PNGs does not independently authenticate or validate the original experimental analyses. Cross-platform rendering and another font can differ even when the plotted scientific content is identical. Clean macOS/Linux installations were not executed in this validation.
+No new DeepSeek design, author-matching call, graph extraction/import, or author analysis was executed for this revision. A fresh model-generation run and a graph rebuild from only the public Python files remain unvalidated and require the external materials documented in `PROTOTYPE.md`.
 
-The current public reproduction scope remains the eight frozen curves, not a complete data-to-scientific-result rerun. Original observations, the historical graph, model credentials, and provider requests are not distributed by this figure artifact.
+## Preservation and file checks
+
+All 85 original Python files are included and their parsed source matches the old archive. The five accepted analyses and trusted workers retain their original bytes. Frozen result tables, reference images, source ZIPs, and the original 20-paper graph were not changed. Known credentials were compared only in memory against the public files; values and secret fingerprints were not logged. A file-level manifest and source inventory accompany the release.
