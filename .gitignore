@@ -1,0 +1,19 @@
+# Credentials and local configuration
+.env
+.env.*
+*.pem
+*.key
+secrets.*
+credentials.*
+
+# Local environments, generated outputs, and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.matplotlib/
+outputs/
+outputs_*/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,2 @@
+# Preserve frozen tables, reference sources, and image bytes on every checkout.
+* -text

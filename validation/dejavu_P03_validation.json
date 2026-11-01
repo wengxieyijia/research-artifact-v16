@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "source_release": "v16",
+  "validation_scope": "Frozen-result rendering, not scientific reanalysis or independent execution attestation.",
+  "strict_reference_images_required": false,
+  "runtime_environment": {
+    "python": "3.12.7",
+    "matplotlib": "3.11.2",
+    "numpy": "2.3.5",
+    "pillow": "12.3.0",
+    "freetype": "2.14.3",
+    "font_family": "DejaVu Sans",
+    "reference_font_family": "Arial",
+    "reference_pixel_identity_expected": false
+  },
+  "curve_count": 2,
+  "point_count": 120,
+  "curves": [
+    {
+      "stem": "P03_curve_1",
+      "case": "P03",
+      "points": 60,
+      "point_values_flags_and_order_match": true,
+      "option_matrix_matches": true,
+      "png_size": [
+        2586,
+        1475
+      ],
+      "png_bytes_equal_reference": false,
+      "png_pixels_equal_reference": false,
+      "svg_geometry_styles_and_text_equal_reference": false,
+      "svg_bytes_equal_reference": false,
+      "png_sha256": "a66fb5bcfb902584190e3fed2f4b3a57d62ee2899f16aa411d2d681073521e03",
+      "svg_sha256": "b9216507d90e8ba5dce229bd6f4633c9d352ff5ab45a6edabdb9898a9607a41e"
+    },
+    {
+      "stem": "P03_curve_2",
+      "case": "P03",
+      "points": 60,
+      "point_values_flags_and_order_match": true,
+      "option_matrix_matches": true,
+      "png_size": [
+        2600,
+        1475
+      ],
+      "png_bytes_equal_reference": false,
+      "png_pixels_equal_reference": false,
+      "svg_geometry_styles_and_text_equal_reference": false,
+      "svg_bytes_equal_reference": false,
+      "png_sha256": "93fd2b5704d70902a64e6157babd8fd22dd102d6916f3b9b1e1c93253b6d0a49",
+      "svg_sha256": "7caaf0c289bfdd8a7235d293e06ba5d7daebb839d4a5098ab5864bb0bcb184d6"
+    }
+  ],
+  "errors": [],
+  "svg_comparison_ignores_export_metadata_generated_identifiers_and_nonrendering_xml_indentation": true
+}

@@ -1,0 +1,158 @@
+{
+  "status": "passed",
+  "source_release": "v16",
+  "validation_scope": "Frozen-result rendering, not scientific reanalysis or independent execution attestation.",
+  "strict_reference_images_required": true,
+  "runtime_environment": {
+    "python": "3.12.7",
+    "matplotlib": "3.11.2",
+    "numpy": "2.3.5",
+    "pillow": "12.3.0",
+    "freetype": "2.14.3",
+    "font_family": "Arial",
+    "reference_font_family": "Arial",
+    "reference_pixel_identity_expected": false
+  },
+  "curve_count": 8,
+  "point_count": 480,
+  "curves": [
+    {
+      "stem": "P01_curve_1",
+      "case": "P01",
+      "points": 108,
+      "point_values_flags_and_order_match": true,
+      "option_matrix_matches": true,
+      "png_size": [
+        2452,
+        1471
+      ],
+      "png_bytes_equal_reference": true,
+      "png_pixels_equal_reference": true,
+      "svg_geometry_styles_and_text_equal_reference": true,
+      "svg_bytes_equal_reference": false,
+      "png_sha256": "8c8bbb1e4767d596b1eaf8daf08d2f02629599f319b34e03887a00144b2aa3a2",
+      "svg_sha256": "32e56cc749ffaf44d1e66a9179fd7d749eeb7f871eac3d4538670061687959bc"
+    },
+    {
+      "stem": "P02_curve_1",
+      "case": "P02",
+      "points": 126,
+      "point_values_flags_and_order_match": true,
+      "option_matrix_matches": true,
+      "png_size": [
+        2431,
+        1586
+      ],
+      "png_bytes_equal_reference": true,
+      "png_pixels_equal_reference": true,
+      "svg_geometry_styles_and_text_equal_reference": true,
+      "svg_bytes_equal_reference": false,
+      "png_sha256": "b71b847cecceadd5eb0678f17cccb2244ac54fe71be1864c2a40a82fd65027bf",
+      "svg_sha256": "453bfca7144d8237e27007fd4925ad86dd4636d6eb66875649177012ac98b72e"
+    },
+    {
+      "stem": "P03_curve_1",
+      "case": "P03",
+      "points": 60,
+      "point_values_flags_and_order_match": true,
+      "option_matrix_matches": true,
+      "png_size": [
+        2462,
+        1471
+      ],
+      "png_bytes_equal_reference": true,
+      "png_pixels_equal_reference": true,
+      "svg_geometry_styles_and_text_equal_reference": true,
+      "svg_bytes_equal_reference": false,
+      "png_sha256": "8e8a1fa59adf5658c9a3cf4c6f8f997fdcdfffca2f20c62b5d94255b28028171",
+      "svg_sha256": "144b43be50fda36f21a3fe8be4624de4aabd4b9c5d8a16bf911b10114dd8f042"
+    },
+    {
+      "stem": "P03_curve_2",
+      "case": "P03",
+      "points": 60,
+      "point_values_flags_and_order_match": true,
+      "option_matrix_matches": true,
+      "png_size": [
+        2481,
+        1471
+      ],
+      "png_bytes_equal_reference": true,
+      "png_pixels_equal_reference": true,
+      "svg_geometry_styles_and_text_equal_reference": true,
+      "svg_bytes_equal_reference": false,
+      "png_sha256": "3f12f790363d433e2b8bf3edfe2dba9071799223631d8381d557a489e1b1f59e",
+      "svg_sha256": "435e367c9aa3cb2902ad50d930af16b6dfd2ed98de8fe2766adf44f7c2ca35d4"
+    },
+    {
+      "stem": "P04_curve_1",
+      "case": "P04",
+      "points": 90,
+      "point_values_flags_and_order_match": true,
+      "option_matrix_matches": true,
+      "png_size": [
+        2458,
+        1433
+      ],
+      "png_bytes_equal_reference": true,
+      "png_pixels_equal_reference": true,
+      "svg_geometry_styles_and_text_equal_reference": true,
+      "svg_bytes_equal_reference": false,
+      "png_sha256": "223a61e2c3e46a1f3f0a7277710ada1aceb7399e995ff0afa63850a4d9151dee",
+      "svg_sha256": "b9ddfe42d8beb313e0613eb2b218cfd3d5e1e3d99e6c8cab1caeacb7f25d29c5"
+    },
+    {
+      "stem": "P05_curve_1",
+      "case": "P05",
+      "points": 12,
+      "point_values_flags_and_order_match": true,
+      "option_matrix_matches": true,
+      "png_size": [
+        2484,
+        1371
+      ],
+      "png_bytes_equal_reference": true,
+      "png_pixels_equal_reference": true,
+      "svg_geometry_styles_and_text_equal_reference": true,
+      "svg_bytes_equal_reference": false,
+      "png_sha256": "151136d1fca5d295dd48c6c42c1e7ddb190fed7e9347a461c441e797cd90014d",
+      "svg_sha256": "dc8e11234253825277add1590be4551a1b41ac03f576f056b2cd67709afd6803"
+    },
+    {
+      "stem": "P05_curve_2",
+      "case": "P05",
+      "points": 12,
+      "point_values_flags_and_order_match": true,
+      "option_matrix_matches": true,
+      "png_size": [
+        2484,
+        1371
+      ],
+      "png_bytes_equal_reference": true,
+      "png_pixels_equal_reference": true,
+      "svg_geometry_styles_and_text_equal_reference": true,
+      "svg_bytes_equal_reference": false,
+      "png_sha256": "c5846c62bdd9fd8cf00bba401f32c2187a34b9db63f83d875c5e801526490f1d",
+      "svg_sha256": "f17b35dd9b70752cbb68b1a7c899c8f1895c8958e903cecf0e2e8d1de651aff1"
+    },
+    {
+      "stem": "P05_curve_3",
+      "case": "P05",
+      "points": 12,
+      "point_values_flags_and_order_match": true,
+      "option_matrix_matches": true,
+      "png_size": [
+        2491,
+        1371
+      ],
+      "png_bytes_equal_reference": true,
+      "png_pixels_equal_reference": true,
+      "svg_geometry_styles_and_text_equal_reference": true,
+      "svg_bytes_equal_reference": false,
+      "png_sha256": "23b5a46d1c9edc351c84a94c8465c7c33a2954d4cb409ba804febd51fe6c2592",
+      "svg_sha256": "ab0a5925a070beef29b615e3c8b3b556ee2dd6000a3a869d82219cbeb471d505"
+    }
+  ],
+  "errors": [],
+  "svg_comparison_ignores_export_metadata_generated_identifiers_and_nonrendering_xml_indentation": true
+}

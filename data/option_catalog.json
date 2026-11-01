@@ -1,0 +1,646 @@
+{
+  "source_release": "v16",
+  "scope": "Existing English display labels, including failed-only Options where present in the frozen plan.",
+  "families": [
+    {
+      "case": "P01",
+      "family_id": "F1",
+      "dimensions": [
+        {
+          "key": "D_TIME_WINDOW",
+          "question": "Whether the analysis window covers all available years since 1970, or is shortened to test early/recent endpoint drivers.",
+          "options": [
+            {
+              "id": "Y1",
+              "label": "1970–2020 all available years"
+            },
+            {
+              "id": "Y2",
+              "label": "1970–2010 excluding 2020 endpoint"
+            },
+            {
+              "id": "Y3",
+              "label": "1980–2020 excluding 1970 start point"
+            }
+          ]
+        },
+        {
+          "key": "D_WEALTH_LEVEL",
+          "question": "Which regional household wealth position represents the region's household wealth distribution level.",
+          "options": [
+            {
+              "id": "W1",
+              "label": "Total wealth per household: wealth_total / hhlds"
+            },
+            {
+              "id": "W2",
+              "label": "Reported mean column: mean"
+            },
+            {
+              "id": "W3",
+              "label": "Reported median column: median"
+            }
+          ]
+        },
+        {
+          "key": "D_TRIM",
+          "question": "Whether to robustify extreme values in regional wealth level.",
+          "options": [
+            {
+              "id": "T1",
+              "label": "No trimming"
+            },
+            {
+              "id": "T2",
+              "label": "Winsorize regional wealth level at 1%/99% by year"
+            }
+          ]
+        },
+        {
+          "key": "D_WEIGHT",
+          "question": "How many households each region represents when calculating between-region Gini.",
+          "options": [
+            {
+              "id": "G1",
+              "label": "Weighted by hhlds household count"
+            },
+            {
+              "id": "G2",
+              "label": "Equal weight by region"
+            }
+          ]
+        },
+        {
+          "key": "D_TREND_ESTIMATOR",
+          "question": "How to estimate and test the change per decade from the annual between-region Gini series.",
+          "options": [
+            {
+              "id": "R1",
+              "label": "OLS linear trend + HAC(1)"
+            },
+            {
+              "id": "R2",
+              "label": "Theil–Sen median pairwise slope"
+            },
+            {
+              "id": "R3",
+              "label": "Endpoint difference change per decade"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "P02",
+      "family_id": "F1",
+      "dimensions": [
+        {
+          "key": "D_CONTRAST",
+          "question": "Among H1's pairwise between-group differences, which scalar contrast is used as the effect size for the current path?",
+          "options": [
+            {
+              "id": "O1_STATUS2_MINUS_STATUS1",
+              "label": "Status 2 minus status 1"
+            },
+            {
+              "id": "O2_STATUS3_MINUS_STATUS1",
+              "label": "Status 3 minus status 1"
+            },
+            {
+              "id": "O3_STATUS3_MINUS_STATUS2",
+              "label": "Status 3 minus status 2"
+            }
+          ]
+        },
+        {
+          "key": "D_WAVE",
+          "question": "Which survey wave time windows does the analysis use?",
+          "options": [
+            {
+              "id": "O1_ALL_WAVES",
+              "label": "All three waves"
+            },
+            {
+              "id": "O2_2018",
+              "label": "2018 only"
+            },
+            {
+              "id": "O3_2020",
+              "label": "2020 only"
+            },
+            {
+              "id": "O4_2022",
+              "label": "2022 only"
+            },
+            {
+              "id": "O5_EXCLUDE_2020",
+              "label": "2018 plus 2022, excluding 2020"
+            }
+          ]
+        },
+        {
+          "key": "D_ADJUST",
+          "question": "Which covariates are adjusted for in the between-group comparison?",
+          "options": [
+            {
+              "id": "O1_UNADJUSTED",
+              "label": "Unadjusted"
+            },
+            {
+              "id": "O2_AGE_GENDER",
+              "label": "Age and gender"
+            },
+            {
+              "id": "O3_AGE_GENDER_EDU",
+              "label": "Age, gender, and education"
+            },
+            {
+              "id": "O4_AGE_GENDER_EDU_AGE_SQ",
+              "label": "Age, gender, education, and age squared"
+            }
+          ]
+        },
+        {
+          "key": "D_MISSING",
+          "question": "How are the 21 missing rows of Education_tri handled?",
+          "options": [
+            {
+              "id": "O1_COMPLETE_CASE",
+              "label": "Complete case"
+            },
+            {
+              "id": "O2_MULTIPLE_IMPUTATION",
+              "label": "Multiple imputation for education"
+            }
+          ]
+        },
+        {
+          "key": "D_MODEL",
+          "question": "How are the selected pairwise contrasts estimated and formally tested under repeated measures?",
+          "options": [
+            {
+              "id": "O1_LMM_RANDOM_INTERCEPT",
+              "label": "Random-intercept linear mixed model"
+            },
+            {
+              "id": "O2_OLS_ROBUST",
+              "label": "OLS with robust standard errors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "P03",
+      "family_id": "F1_TOTAL_EMPLOYMENT_DID",
+      "dimensions": [
+        {
+          "key": "D_SAMPLE",
+          "question": "Which stores enter the NJ-versus-PA comparison?",
+          "options": [
+            {
+              "id": "ALL_VALID",
+              "label": "All valid fast-food stores in NJ and PA after duplicate-SHEET exclusion"
+            },
+            {
+              "id": "CHAIN_OVERLAP",
+              "label": "Restrict to chains observed in both NJ and PA"
+            },
+            {
+              "id": "FRANCHISE_ONLY",
+              "label": "Exclude company-owned stores"
+            }
+          ]
+        },
+        {
+          "key": "D_MISSING",
+          "question": "How are missing employment component counts handled?",
+          "options": [
+            {
+              "id": "COMPLETE_CASE",
+              "label": "Complete-case for the selected employment measure"
+            },
+            {
+              "id": "MICE_MI",
+              "label": "MICE multiple imputation of six employment component counts with frozen PMM rules"
+            }
+          ]
+        },
+        {
+          "key": "D_OUTLIER",
+          "question": "Should extreme employment counts be winsorized before outcome derivation?",
+          "options": [
+            {
+              "id": "RAW",
+              "label": "Use raw employment counts"
+            },
+            {
+              "id": "WINSOR_1_99",
+              "label": "Winsorize component counts at pooled 1st and 99th percentiles"
+            }
+          ]
+        },
+        {
+          "key": "D_ADJUST",
+          "question": "How should the NJ-versus-PA employment change be adjusted for store composition?",
+          "options": [
+            {
+              "id": "UNADJUSTED_DID",
+              "label": "Unadjusted difference-in-differences"
+            },
+            {
+              "id": "COVARIATE_DID",
+              "label": "Covariate-adjusted DiD with pre-store characteristics"
+            },
+            {
+              "id": "STRATIFIED_DID",
+              "label": "Stratified DiD by chain and ownership"
+            },
+            {
+              "id": "BASELINE_EMP_DID",
+              "label": "Covariate-adjusted DiD with baseline total employment"
+            }
+          ]
+        },
+        {
+          "key": "D_INFERENCE",
+          "question": "Which two-sided formal test and variance estimator is used for the zero DiD contrast?",
+          "options": [
+            {
+              "id": "HC2_OLS",
+              "label": "HC2 heteroskedasticity-robust OLS t-test"
+            },
+            {
+              "id": "WELCH_T",
+              "label": "Welch two-sample t-test on store-level total employment changes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "P03",
+      "family_id": "F2_NONMANAGERIAL_EMPLOYMENT_DID",
+      "dimensions": [
+        {
+          "key": "D_SAMPLE",
+          "question": "Which stores enter the NJ-versus-PA nonmanagerial comparison?",
+          "options": [
+            {
+              "id": "ALL_VALID",
+              "label": "All valid fast-food stores in NJ and PA after duplicate-SHEET exclusion"
+            },
+            {
+              "id": "CHAIN_OVERLAP",
+              "label": "Restrict to chains observed in both NJ and PA"
+            },
+            {
+              "id": "FRANCHISE_ONLY",
+              "label": "Exclude company-owned stores"
+            }
+          ]
+        },
+        {
+          "key": "D_MISSING",
+          "question": "How are missing nonmanagerial employment component counts handled?",
+          "options": [
+            {
+              "id": "COMPLETE_CASE",
+              "label": "Complete-case for the selected nonmanagerial employment measure"
+            },
+            {
+              "id": "MICE_MI",
+              "label": "MICE multiple imputation of four nonmanagerial component counts with frozen PMM rules"
+            }
+          ]
+        },
+        {
+          "key": "D_OUTLIER",
+          "question": "Should extreme nonmanagerial employment counts be winsorized before outcome derivation?",
+          "options": [
+            {
+              "id": "RAW",
+              "label": "Use raw nonmanagerial employment counts"
+            },
+            {
+              "id": "WINSOR_1_99",
+              "label": "Winsorize nonmanagerial component counts at pooled 1st and 99th percentiles"
+            }
+          ]
+        },
+        {
+          "key": "D_ADJUST",
+          "question": "How should the NJ-versus-PA nonmanagerial employment change be adjusted for store composition?",
+          "options": [
+            {
+              "id": "UNADJUSTED_DID",
+              "label": "Unadjusted difference-in-differences"
+            },
+            {
+              "id": "COVARIATE_DID",
+              "label": "Covariate-adjusted DiD with pre-store characteristics"
+            },
+            {
+              "id": "STRATIFIED_DID",
+              "label": "Stratified DiD by chain and ownership"
+            },
+            {
+              "id": "BASELINE_EMP_DID",
+              "label": "Covariate-adjusted DiD with baseline nonmanagerial employment"
+            }
+          ]
+        },
+        {
+          "key": "D_INFERENCE",
+          "question": "Which two-sided formal test and variance estimator is used for the zero nonmanagerial DiD contrast?",
+          "options": [
+            {
+              "id": "HC2_OLS",
+              "label": "HC2 heteroskedasticity-robust OLS t-test"
+            },
+            {
+              "id": "WELCH_T",
+              "label": "Welch two-sample t-test on store-level nonmanagerial employment changes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "P04",
+      "family_id": "F1",
+      "dimensions": [
+        {
+          "key": "D_SAMPLE",
+          "question": "Within the 24–34 base sample, whether to further restrict age to approximate a population with higher educational completion?",
+          "options": [
+            {
+              "id": "ALL",
+              "label": "All aged 24–34"
+            },
+            {
+              "id": "AGE25",
+              "label": "Aged 25–34"
+            },
+            {
+              "id": "AGE30",
+              "label": "Aged 30–34"
+            }
+          ]
+        },
+        {
+          "key": "D_WEIGHT",
+          "question": "When estimating the sample mean difference, whether to use 1976 NLS cross-sectional weights, and whether to apply extreme-value sensitivity treatment to the weights?",
+          "options": [
+            {
+              "id": "UNWEIGHTED",
+              "label": "Unweighted"
+            },
+            {
+              "id": "WEIGHTED",
+              "label": "1976 NLS weights"
+            },
+            {
+              "id": "WINSOR99",
+              "label": "1976 NLS weights 99% winsorized"
+            }
+          ]
+        },
+        {
+          "key": "D_ADJUST",
+          "question": "Which observed covariates are included in the linear mean-difference model?",
+          "options": [
+            {
+              "id": "NONE",
+              "label": "Unadjusted"
+            },
+            {
+              "id": "AGE_BLACK",
+              "label": "Age and race"
+            },
+            {
+              "id": "FAMILY",
+              "label": "Family background (including parental education imputation indicator)"
+            },
+            {
+              "id": "EXTENDED",
+              "label": "Extended family background and region (reference region reg661)"
+            },
+            {
+              "id": "FAMILY_REGION",
+              "label": "Family background plus region (reference region reg661)"
+            }
+          ]
+        },
+        {
+          "key": "D_INFERENCE",
+          "question": "Which standard errors and two-sided test are used for the nearc4 coefficient?",
+          "options": [
+            {
+              "id": "HC1",
+              "label": "HC1 robust standard errors"
+            },
+            {
+              "id": "CLASSICAL",
+              "label": "Classical homoskedastic standard errors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "P05",
+      "family_id": "F_TOTAL",
+      "dimensions": [
+        {
+          "key": "D_UNIT",
+          "question": "How should repeated SubjectTag rows be handled for total correlation?",
+          "options": [
+            {
+              "id": "O1",
+              "label": "Subject-level averaging"
+            },
+            {
+              "id": "O3",
+              "label": "Exact-duplicate removal then subject-level averaging"
+            }
+          ]
+        },
+        {
+          "key": "D_DEPRESSION",
+          "question": "Which CES-D depression score should be used?",
+          "options": [
+            {
+              "id": "O1",
+              "label": "CESD20_1992"
+            },
+            {
+              "id": "O2",
+              "label": "CESD7_1992"
+            },
+            {
+              "id": "O3",
+              "label": "CESD7_1994"
+            }
+          ]
+        },
+        {
+          "key": "D_OUTLIER",
+          "question": "How should extreme depression and delinquency values be handled?",
+          "options": [
+            {
+              "id": "O1",
+              "label": "No outlier treatment"
+            },
+            {
+              "id": "O2",
+              "label": "Winsorize 1st and 99th percentiles"
+            }
+          ]
+        },
+        {
+          "key": "D_MISSING",
+          "question": "How should missing depression and delinquency be handled?",
+          "options": [
+            {
+              "id": "O1",
+              "label": "Complete-case deletion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "P05",
+      "family_id": "F_WITHIN",
+      "dimensions": [
+        {
+          "key": "D_UNIT",
+          "question": "How should repeated SubjectTag rows be handled for within-family correlation?",
+          "options": [
+            {
+              "id": "O1",
+              "label": "Subject-level averaging with unique family assignment"
+            },
+            {
+              "id": "O3",
+              "label": "Exact-duplicate removal then subject-level averaging with unique family assignment"
+            }
+          ]
+        },
+        {
+          "key": "D_DEPRESSION",
+          "question": "Which CES-D depression score should be used?",
+          "options": [
+            {
+              "id": "O1",
+              "label": "CESD20_1992"
+            },
+            {
+              "id": "O2",
+              "label": "CESD7_1992"
+            },
+            {
+              "id": "O3",
+              "label": "CESD7_1994"
+            }
+          ]
+        },
+        {
+          "key": "D_OUTLIER",
+          "question": "How should extreme depression and delinquency values be handled?",
+          "options": [
+            {
+              "id": "O1",
+              "label": "No outlier treatment"
+            },
+            {
+              "id": "O2",
+              "label": "Winsorize 1st and 99th percentiles"
+            }
+          ]
+        },
+        {
+          "key": "D_MISSING",
+          "question": "How should missing depression and delinquency be handled?",
+          "options": [
+            {
+              "id": "O1",
+              "label": "Complete-case deletion"
+            },
+            {
+              "id": "O2",
+              "label": "MICE multiple imputation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "P05",
+      "family_id": "F_BETWEEN",
+      "dimensions": [
+        {
+          "key": "D_UNIT",
+          "question": "How should repeated SubjectTag rows be handled before family-mean aggregation?",
+          "options": [
+            {
+              "id": "O1",
+              "label": "Subject-level averaging with unique family assignment"
+            },
+            {
+              "id": "O3",
+              "label": "Exact-duplicate removal then subject-level averaging with unique family assignment"
+            }
+          ]
+        },
+        {
+          "key": "D_DEPRESSION",
+          "question": "Which CES-D depression score should be used?",
+          "options": [
+            {
+              "id": "O1",
+              "label": "CESD20_1992"
+            },
+            {
+              "id": "O2",
+              "label": "CESD7_1992"
+            },
+            {
+              "id": "O3",
+              "label": "CESD7_1994"
+            }
+          ]
+        },
+        {
+          "key": "D_OUTLIER",
+          "question": "How should extreme depression and delinquency values be handled?",
+          "options": [
+            {
+              "id": "O1",
+              "label": "No outlier treatment"
+            },
+            {
+              "id": "O2",
+              "label": "Winsorize 1st and 99th percentiles"
+            }
+          ]
+        },
+        {
+          "key": "D_MISSING",
+          "question": "How should missing depression and delinquency be handled before family-mean aggregation?",
+          "options": [
+            {
+              "id": "O1",
+              "label": "Complete-case deletion"
+            },
+            {
+              "id": "O2",
+              "label": "MICE multiple imputation"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

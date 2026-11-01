@@ -1,0 +1,82 @@
+[
+  {
+    "id": "S1",
+    "case": "P01",
+    "stem": "P01_curve_1",
+    "title": "Change in between-region household wealth inequality since 1970",
+    "unit": "Gini coefficient change per decade",
+    "points": 108,
+    "png_sha256": "8c8bbb1e4767d596b1eaf8daf08d2f02629599f319b34e03887a00144b2aa3a2",
+    "svg_sha256": "61247a826e9b50c75984c8f4cfe188d986f71c88a9b1812bc345c666fee7acde"
+  },
+  {
+    "id": "S2",
+    "case": "P02",
+    "stem": "P02_curve_1",
+    "title": "Pairwise mean differences in Total_p by cognitive status",
+    "unit": "Total_p scale points",
+    "points": 126,
+    "png_sha256": "b71b847cecceadd5eb0678f17cccb2244ac54fe71be1864c2a40a82fd65027bf",
+    "svg_sha256": "96319a1ccd03dbb2118ff27086acbcd1e3282e230b67e2c9b5e3d38380c4fa32"
+  },
+  {
+    "id": "S3",
+    "case": "P03",
+    "stem": "P03_curve_1",
+    "title": "NJ minimum-wage effect on total fast-food employment",
+    "unit": "employees per store",
+    "points": 60,
+    "png_sha256": "8e8a1fa59adf5658c9a3cf4c6f8f997fdcdfffca2f20c62b5d94255b28028171",
+    "svg_sha256": "d26f229a5f23c21922a884fd0672652ae50874bd67c9a54f6350be63573e0c54"
+  },
+  {
+    "id": "S4",
+    "case": "P03",
+    "stem": "P03_curve_2",
+    "title": "NJ minimum-wage effect on nonmanagerial fast-food employment",
+    "unit": "nonmanagerial employees per store",
+    "points": 60,
+    "png_sha256": "3f12f790363d433e2b8bf3edfe2dba9071799223631d8381d557a489e1b1f59e",
+    "svg_sha256": "995eb654f691914750fe98de3375e9a9f7289066e9876866a14005938883be51"
+  },
+  {
+    "id": "S5",
+    "case": "P04",
+    "stem": "P04_curve_1",
+    "title": "Association between 4-year college proximity and completed schooling",
+    "unit": "years of schooling",
+    "points": 90,
+    "png_sha256": "223a61e2c3e46a1f3f0a7277710ada1aceb7399e995ff0afa63850a4d9151dee",
+    "svg_sha256": "3576f157b1e259bfd9cf43e127b00253e01a77a793ab3322e2e110d0403064dd"
+  },
+  {
+    "id": "S6",
+    "case": "P05",
+    "stem": "P05_curve_1",
+    "title": "Total depression–delinquency correlation",
+    "unit": "Pearson correlation coefficient",
+    "points": 12,
+    "png_sha256": "151136d1fca5d295dd48c6c42c1e7ddb190fed7e9347a461c441e797cd90014d",
+    "svg_sha256": "dc3ab48dc3e1336679f989e0e6cf20c4fd342c65588f2bd60cf2920ac129ce3c"
+  },
+  {
+    "id": "S7",
+    "case": "P05",
+    "stem": "P05_curve_2",
+    "title": "Within-family depression–delinquency correlation",
+    "unit": "Within-family Pearson correlation coefficient",
+    "points": 12,
+    "png_sha256": "c5846c62bdd9fd8cf00bba401f32c2187a34b9db63f83d875c5e801526490f1d",
+    "svg_sha256": "330b63b89eb09f5e503847371d3857cd0fdfbb691f85c47fdb6ffac5ba24f437"
+  },
+  {
+    "id": "S8",
+    "case": "P05",
+    "stem": "P05_curve_3",
+    "title": "Between-family depression–delinquency correlation",
+    "unit": "Between-family Pearson correlation coefficient",
+    "points": 12,
+    "png_sha256": "23b5a46d1c9edc351c84a94c8465c7c33a2954d4cb409ba804febd51fe6c2592",
+    "svg_sha256": "aa3d74a99fc05091314f26e6673eccaf652f3627783f6ce5c8048eeed9f89e42"
+  }
+]
